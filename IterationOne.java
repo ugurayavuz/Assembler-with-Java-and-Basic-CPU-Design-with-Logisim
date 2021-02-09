@@ -1,6 +1,6 @@
 import java.io.BufferedReader;
-import java.io.File; // Import the File class
-import java.io.FileNotFoundException; // Import this class to handle errors
+import java.io.File; 
+import java.io.FileNotFoundException; 
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -77,7 +77,7 @@ public class IterationOne {
 		// System.out.println(binaryValue);
 		if (opType.toUpperCase().equals("AND")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "0000" + String.format("%3s", binaryValue[k]).replace(' ', '0')
 						+ String.format("%3s", binaryValue[k + 1]).replace(' ', '0') + "000"  
@@ -91,22 +91,22 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("ADD")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "0001" + String.format("%3s", binaryValue[k]).replace(' ', '0')
 						+ String.format("%3s", binaryValue[k + 1]).replace(' ', '0') + "000"
 						+ String.format("%3s", binaryValue[k + 2]).replace(' ', '0');
-		//		 System.out.println(newString);
+				 System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
 		} else if (opType.toUpperCase().equals("LD")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "0100" + String.format("%3s", binaryValue[k]).replace(' ', '0')
 						+ String.format("%9s", binaryValue[k + 1]).replace(' ', '0');
-			//	 System.out.println(newString);
+				 System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
@@ -114,12 +114,12 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("ADDI")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "0011" + String.format("%3s", binaryValue[k]).replace(' ', '0')
 						+ String.format("%3s", binaryValue[k + 1]).replace(' ', '0') 
 						+ String.format("%6s", binaryValue[k + 2]).replace(' ', '0');
-		//		 System.out.println(newString);
+				 System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
@@ -127,12 +127,12 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("ANDI")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "0010" + String.format("%3s", binaryValue[k]).replace(' ', '0')
 						+ String.format("%3s", binaryValue[k + 1]).replace(' ', '0') 
 						+ String.format("%6s", binaryValue[k + 2]).replace(' ', '0');
-		//		 System.out.println(newString);
+				 System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
@@ -140,7 +140,7 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("ST")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "0101" + String.format("%3s", binaryValue[k]).replace(' ', '0')
 						+ String.format("%9s", binaryValue[k + 1]).replace(' ', '0');
@@ -152,11 +152,11 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("CMP")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "0110" + "000" + String.format("%3s", binaryValue[k]).replace(' ', '0')
 						+ "000"  +String.format("%3s", binaryValue[k + 1]).replace(' ', '0');
-		//		 System.out.println(newString);
+				 System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
@@ -164,10 +164,10 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("JMP")) {
 			count++;
-			// System.out.println(opType);
+			System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "0111" + "00" + String.format("%10s", binaryValue[k]).replace(' ', '0');
-			//    System.out.println(newString);
+			   System.out.println(newString);
 				toHexadecimal(newString);
 
 			}
@@ -176,10 +176,10 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("JE")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "1000" + "00" + String.format("%10s", binaryValue[k]).replace(' ', '0');
-		//		System.out.println(newString);
+				System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
@@ -187,10 +187,10 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("JA")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "1001" + "00" + String.format("%10s", binaryValue[k]).replace(' ', '0');
-		//		System.out.println(newString);
+				System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
@@ -198,10 +198,10 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("JB")) {
 			count++;
-		//	 System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "1010" + "00" + String.format("%10s", binaryValue[k]).replace(' ', '0');
-	//			System.out.println(newString);
+				System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
@@ -209,10 +209,10 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("JBE")) {
 			count++;
-		//	 System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "1011" + "00" + String.format("%10s", binaryValue[k]).replace(' ', '0');
-			//	System.out.println(newString);
+				System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
@@ -220,10 +220,10 @@ public class IterationOne {
 
 		else if (opType.toUpperCase().equals("JBA")) {
 			count++;
-			// System.out.println(opType);
+			 System.out.println(opType);
 			for (int k = 0; k < count; k++) {
 				newString = "1100" + "00" + String.format("%10s", binaryValue[k]).replace(' ', '0');
-			//	System.out.println(newString);
+				System.out.println(newString);
 				toHexadecimal(newString);
 			}
 
@@ -241,7 +241,7 @@ public class IterationOne {
 
 		if (binary.equals("????")) {
 			appendToFile(path, "????" + "\n");
-	//		System.out.println("????");
+			System.out.println("????");
 		} else {
 			if(binary.startsWith("0000")) {
 				int decimal = Integer.parseInt(binary, 2);
@@ -252,7 +252,7 @@ public class IterationOne {
 			else {
 			int decimal = Integer.parseInt(binary, 2);
 			String hexadecimalStr = Integer.toString(decimal, 16);
-	//		System.out.println(hexadecimalStr.toUpperCase());
+			System.out.println(hexadecimalStr.toUpperCase());
 			appendToFile(path, hexadecimalStr.toUpperCase() + "\n");
 			}
 		}
