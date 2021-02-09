@@ -2,7 +2,7 @@
 
 Basic CPU design which contains:
 
--Assembler that written in Java for converting given instructions to hexadecimal in order to use them in CPU instruction memory.
+-Assembler that written in Java in order to convert given instructions and its values to hexadecimal version for CPU instruction memory input.
 
 -Logisim design of CPU and its components(Adder, Comparator, Register File, Arithmetic Logic Unit, Register(derived from D-Latch, D-Flip-Flop), PC Register and Control Unit).
 
