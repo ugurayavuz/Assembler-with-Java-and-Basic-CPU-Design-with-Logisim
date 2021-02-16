@@ -9,3 +9,4 @@ ST R6,4
 CMP R5,R2
 JBE 5
 JBA 6
+XXX 2
