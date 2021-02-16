@@ -237,7 +237,7 @@ public class IterationOne {
 
 	public static void toHexadecimal(String binary) throws IOException {
 
-		Path path = Paths.get("output.txt");
+		Path path = Paths.get("instruction_outputs.txt");
 
 		if (binary.equals("????")) {
 			appendToFile(path, "????" + "\n");
