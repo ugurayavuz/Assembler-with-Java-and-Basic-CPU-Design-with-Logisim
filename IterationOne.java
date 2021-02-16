@@ -19,11 +19,11 @@ import java.util.Scanner;
 public class IterationOne {
 
 	public static void main(String[] args) throws IOException {
-		new FileOutputStream("output.txt").close();
-		Path path = Paths.get("output.txt");
+		new FileOutputStream("instruction_outputs.txt").close();
+		Path path = Paths.get("instruction_outputs.txt");
 		appendToFile(path, "v2.0 raw" + "\n");
 		try {
-			FileReader fr = new FileReader("inputDigital.txt");
+			FileReader fr = new FileReader("instruction_inputs.txt");
 			BufferedReader br = new BufferedReader(fr);
 			ArrayList<String> fileList = new ArrayList<String>();
 			String str;
